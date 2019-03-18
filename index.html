@@ -16,10 +16,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
+
     <!-- Left Column -->
     <div class="w3-third">
-    
+
       <div class="w3-white w3-text-grey w3-card-4">
         <div class="w3-display-container">
           <img src="image.jpg" style="width:100%" alt="Avatar">
@@ -35,38 +35,36 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
           <hr>
 
           <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>Competetive Programming</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
           <p>Data Structures and Algorithms</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
-            </div>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
+          </div>
+          <p>Cloud Computing (AWS)</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
           <p>Machine Learning</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
           </div>
           <p>Full Stack Web Development</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
           </div>
           <br>
 
           <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Programming Languages</b></p>
-          <p>C++</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
           <p>Python</p>
           <div class="w3-light-grey w3-round-xlarge">
             <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
           </div>
+          <p>C++</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:70%"></div>
+          </div>
           <p>MEAN Stack</p>
           <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:60%"></div>
           </div>
           <br>
         </div>
@@ -77,19 +75,76 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- Right Column -->
     <div class="w3-twothird">
-    
+
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+         <div class="w3-container">
+          <h5 class="w3-opacity"><b>Platform Engineer / Quantiphi Analytics Solutions, Mumbai </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>July 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
+          <p>
+             <h7>Project 1: Server-less Video Streaming Application</h7>
+             <ul>
+                 <li>Successfully architected and developed a server-less video streaming application using AWS cloud native
+services launched in a private VPC</li>
+                 <li>Hosted the user interface using S3 static web hosting</li>
+                 <li>Used AWS Cognito for user pool authentication and restricted the access to different resources using AWS IAM</li>
+                 <li>Used S3 as a primary storage for the videos and DynamoDB for other data storage</li>
+                 <li>Developed all the required APIs interactions between frontend and the backend, and the interaction between
+different resources using AWS Lambda and API Gateway services</li>
+                 <li>Designed a cloudformation template to automate the orchestration of the entire platform</li>
+             </ul>
+             <h7>Project 2: Hashicorp Vault POC</h7>
+             <ul>
+                 <li>Developed a POC to implement Hashicorp Vault server on AWS cloud with the following features</li>
+                 <li>Deployment of all the servers with High Availability mode across multiple availability zones</li>
+                 <li>Used Consul as a storage backed for High Availability and local file system for single node to achieve data
+persistence</li>
+                 <li>Automated the process of sealing and unsealing for a single node server using EC2 user-data</li>
+                 <li>Automated the process of populating secrets and setting up various authentication engines</li>
+                 <li>Automated the entire process of launching all the required infrastructure using Hashicorp Terraform</li>
+             </ul>
+             <h7>Other Miscellaneous Tasks:</h7>
+             <ul>
+                 <li>Worked on various POCs to launch different AWS resources using Hashicorp Terraform including the following</li>
+                 <li>Deployment of EC2 instances in public and private subnets of a custom VPC with restricted access.</li>
+                 <li>Deployment of RDS instances within a custom VPC using subnet groups</li>
+                 <li>Had some exposure on HDP administration and launch configurations for the platform</li>
+             </ul>
+          </p>
+          <hr>
+        </div>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Software Intern / UST Global Trivandrum</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>I an intern at the Artificial Intelligence department at Infinity Labs division. I have worked on developing chatbots using a internally developed AI based virtual assistant development platform. I am currently working on developing UI for an AI based bug tracking porject.</p>
+          <h5 class="w3-opacity"><b>Software Developer Intern / UST Global Trivandrum</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - June 2018</h6>
+          <p>
+            <h6>Project 1:</h6>
+            <ul>
+                <li>Worked on developing a full-stack enterprise web application for an internal project using Angular 5, Node.js,
+Express.js and MySQL</li>
+                <li>Developed API’s for interacting with the database and other third party applications using Node.js</li>
+                <li>Developed a UI using angular 5, including features like inter-component routing and http requests</li>
+            </ul>
+            <h6>Other projects and achievements:</h6>
+            <ul>
+                <li>Successfully managed to get acquainted with ICE-XD, an in-house built platform for developing intelligent
+conversation assistant in a very short span, and recognised as one of early members to have done so</li>
+                <li>Developed many chatbots using the platform for various clients , during the course of the internship</li>
+                <li>Suggested various suggestions on improving the platform and received appreciation for the same</li>
+                <li>Conducted training sessions for developers over different teams on how to use the platform</li>
+            </ul>
+          </p>
           <hr>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Research Intern / Helpage India, Cochin</b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2016 - July 2016</h6>
-          <p>Helpage India is an NGO aimed at working to uplift the status of elderly in India. I was as a summer intern with four other interns as a part of my PS-1 program. Though I was very skeptical initially about how my 2 month internship would be, it turned out to be really beneficial by the end of those 8 weeks at Helpage. We were engaged with various activities at the organisation. Mr. Bimal Thankachan, the Kerala state corporate fundraising executive, helped us a lot during my period at Helpage. I believe, it was his work that inspired me study about corporate fund raising, and carry out a research titled "Emerging trends of CSR in India." My fellow interns were all also really great(though all are from BITS Pilani only :p), and it was a great experience working along with them. We worked on five different projects during these 8 weeks. I don't like to brag about it, but I believe this was one of the most productive PS-1 stations in our year.</p>
+          <p>
+            <ul>
+                <li>Conducted research studies on corporate social responsibilities and major factors effecting elder abuse</li>
+                <li>Successfully published two research papers based on the above mentioned studies while working here</li>
+                <li>Prepared and submitted a recommendation report suggestion further initiatives to the organisation</li>
+             </ul>
+          </p>
           <hr>
         </div>
       </div>
@@ -98,18 +153,23 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-university fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education and Certifications</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>BITS Pilani K.K.Birla Goa Campus</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - <span class="w3-tag w3-teal w3-round">Present</span></h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2014 - 2018</h6>
           <p>Bachelor's Degree in Electronics and Instrumentation Engineering</p>
           <hr>
         </div>
+         <div class="w3-container">
+          <h5 class="w3-opacity"><b>Amazon Web Services</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Nov 2018 - Nov 2020 | Validation No: GEGCYW32C2R11CWQ</h6>
+          <p>AWS Certified Developer - Associate</p><br>
+        </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Coursera.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018 - <span class="w3-tag w3-teal w3-round">Present</span> | License 9D62EWEP8XXR</h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2018  | License 9D62EWEP8XXR</h6>
           <p>Machine Learning Course by Stanford University</p><br>
         </div>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Nettech Private Limited</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2014 - <span class="w3-tag w3-teal w3-round">Present</span> | License NPL/15/05S/053</h6>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2014  | License NPL/15/05S/053</h6>
           <p>Certificate in Network Management</p>
           <hr>
         </div>
@@ -144,18 +204,18 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
     <!-- End Right Column -->
     </div>
-    
+
   <!-- End Grid -->
   </div>
-  
+
   <!-- End Page Container -->
 </div>
 
 <footer class="w3-container w3-teal w3-center w3-margin-top" style="padding-bottom: 15px">
-  <p>Find me on social media.</p> 
+  <p>Find me on social media.</p>
   <i class="fa fa-linkedin w3-hover-opacity"></i>
   <i class="fa fa-github w3-hover-opacity"></i>
-  <i class="fa fa-quora w3-hover-opacity"></i>  
+  <i class="fa fa-quora w3-hover-opacity"></i>
   <i class="fa fa-facebook-official w3-hover-opacity"></i>
 </footer>
 
